@@ -1022,6 +1022,10 @@ body {
     background-image: url("images/promotion-banner3.jpg");
 }
 
+.testimonialsection {
+    background-color: #4b27f3;
+}
+
 /* DESKTOP & LAPTOP STYLES (1200px and up) */
 @media (min-width: 1200px) {
     .navbar {
