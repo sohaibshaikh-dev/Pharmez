@@ -1011,15 +1011,15 @@ body {
 
 /* BACKGROUND IMAGES */
 .vitamins {
-    background-image: url("promotion-banner1.jpg");
+    background-image: url("images/promotion-banner1.jpg");
 }
 
 .baby-care {
-    background-image: url("promotion-banner2.jpg");
+    background-image: url("images/promotion-banner2.jpg");
 }
 
 .personal-care {
-    background-image: url("promotion-banner3.jpg");
+    background-image: url("images/promotion-banner3.jpg");
 }
 
 /* DESKTOP & LAPTOP STYLES (1200px and up) */
