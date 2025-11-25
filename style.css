@@ -1024,8 +1024,303 @@ body {
 
 .testimonialsection {
     background-color: #4b27f3;
+    height: 500px;
+    margin: right 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 30px;
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+p {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: white;
 }
 
+h5 {
+    text-align: center;
+    color: #fdf485;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    padding-top: 70px;
+    
+}
+.span {
+    text-align: center;
+    align-items: center;
+    
+}
+
+.rating-stars {
+    vertical-align: middle;
+}
+
+/* Overall Blog Section */
+.blog {
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+.blog span {
+    font-size: 16px;
+    color: #5c45bf;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    
+}
+
+
+
+/* Wrapping all cards in one row */
+.blog-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual Blog Cards */
+.blog-card {
+    width: 330px;
+    text-align: start;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+        transition: all 0.6s ease-in-out;
+    border-radius: 30px;
+}
+
+.blog-card img:hover {
+    transform: scale(1.08);
+    opacity: 80%;
+}
+
+
+.blog-card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    font-weight: 700;
+}
+
+.blog-card .card-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+.blog-text{
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.news-text{
+    color: #5c45bf;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    letter-spacing: 3.0px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding-top: 70px;
+}
+
+/* MAIN FOOTER */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 70px;
+    border-radius: 30px;
+    margin: 40px auto;
+    width: 88%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* LEFT SECTION */
+.footer-left {
+    width: 40%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+.footer-logo h2 {
+    font-size: 55px;
+    font-weight: 800;
+}
+.footer-logo h2:hover {
+    color: #5d45bf;
+}
+
+/* NEWSLETTER */
+.news-title {
+    margin: 20px 0 10px;
+    font-size: 22px;
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    width: 420px;
+    border-radius: 40px;
+    padding: 5px 10px 5px 20px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 40px;
+    padding-left: 15px;
+}
+
+.send-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #f6e968;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+
+/* NAVIGATION */
+.footer-nav h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* CONTACT INFO */
+.footer-contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+/* SOCIAL ICONS — PERFECT VERTICAL CIRCLES */
+.social-icons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #5d45bf;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    transform: translateY(-4px);
+}
+
+/* COPYRIGHT */
+.footer-left .copyright {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .subscribe-box {
+        width: 100%;
+    }
+}
+
+.news-and-articles-img3 {
+        transition: all 0.6s ease-in-out;
+    border-radius: 30px;
+}
+ 
 /* DESKTOP & LAPTOP STYLES (1200px and up) */
 @media (min-width: 1200px) {
     .navbar {
@@ -1191,10 +1486,57 @@ body {
         display: none;
     }
     
-    .lang {
-        margin-left: 10px;
-        padding: 6px 12px;
-    }
+  .language-box {
+    width: 130px;
+    padding: 10px 15px;
+    background: #f0f5fa;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.flag {
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 130px;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    display: none;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.option:hover {
+    background: #f0f5fa;
+}
+
+
     
     .hero-section {
         flex-direction: column;
