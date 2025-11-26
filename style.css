@@ -330,7 +330,7 @@
     display: flex;
     justify-content: space-between;
     margin: 50px 60px;
-    gap: 40px;
+    gap: 33px;
 }
 
 .feature-box {
@@ -338,6 +338,10 @@
     align-items: center;
     gap: 20px;
     width: 40%;
+   visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+    animation-name: fadeInLeft;
 }
 
 .icon-circle {
@@ -351,24 +355,33 @@
     box-shadow: 
         0px 0px 25px rgba(160, 160, 160, 0.15),
         0px 0px 40px rgba(210, 210, 210, 0.25);
+    transition: ease-in-out 0.6s;
+    margin-bottom: -25px;
 }
 
+.icon-circle:hover {
+    transform: translateY(-2px);
+
+}
 .icon-circle img {
     width: 48px;
     opacity: 0.9;
 }
 
-.text h4 {
-    font-size: 20px;
+.text h6 {
+    font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: var(--black--color);
+    text-align: start;
 }
 
 .text p {
     margin: 5px 0 0;
     font-size: 15px;
     color: #585858;
+    margin-top: -35px;
+    text-align: start;
 }
 
 .heading {
@@ -1303,6 +1316,25 @@ h5 {
     opacity: 0.7;
     margin-top: 30px;
 }
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.capsule-icon {
+    position: absolute;
+    top: 20px;      /* adjust for perfect positioning */
+    right: 20px;    /* adjust for perfect positioning */
+    width: 90px;    /* same size as screenshot 1 */
+    height: auto;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
