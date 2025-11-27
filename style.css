@@ -1256,29 +1256,104 @@ h5 {
     margin-bottom: 20px;
 }
 
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
+.footer-nav {
+    background-color: #000; /* Black background */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center; /* Center align heading and list */
+    width: 250px; /* Aap adjust kar sakte hain width */
+    border-radius: 5px; /* Thoda rounded corners */
+    font-family: Arial, sans-serif;
 }
 
-.footer-nav ul li {
-    font-size: 18px;
-    margin-bottom: 12px;
+.footer-nav h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Container to hold two columns side by side */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 40px 50px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-width: 900px;  /* width adjust kar sakte hain */
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 40px 50px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 5px;
+    align-items: flex-start;  /* Important: items ki top alignment fix karne ke liye */
+}
+
+.footer-nav h3, .footer-contact h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 25px;
+    line-height: 1;  /* Heading ke line height ko fix karne ke liye */
+    padding: 0;      /* Ensure no extra padding */
+    margin-top: 0;   /* Ensure no extra margin upar */
+}
+
+
+/* Lists */
+.footer-nav ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List items - flex for icon + text */
+.footer-nav ul li, .footer-contact ul li {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #ccc; /* lighter text */
 }
 
-/* CONTACT INFO */
-.footer-contact h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+/* Navigation links */
+.footer-nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.footer-contact p {
-    font-size: 17px;
-    margin: 12px 0;
+.footer-nav ul li a:hover {
+    color: #fff;
 }
+
+/* Icons color */
+.footer-nav ul li i, .footer-contact ul li i {
+    color: #ccc;
+    font-size: 18px;
+    min-width: 20px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .footer-nav, .footer-contact {
+        margin-bottom: 30px;
+    }
+}
+
 
 /* SOCIAL ICONS — PERFECT VERTICAL CIRCLES */
 .social-icons {
