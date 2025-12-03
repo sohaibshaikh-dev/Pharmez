@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmez</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-
         <div class="logo">
-            <img src="images/logo.png">
+            <img src="images/logo.png" alt="Pharmez Logo">
         </div>
 
-        <ul class="menu">
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="menu" id="menu">
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Shop</a></li>
-
             <li class="dropdown">
                 <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
                 <div class="dropdown-content">
@@ -39,9 +35,7 @@
                     <a href="#">Testimonials</a>
                 </div>
             </li>
-
             <li><a href="#">Team</a></li>
-
             <li class="dropdown">
                 <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
                 <div class="dropdown-content">
@@ -51,77 +45,58 @@
             </li>
         </ul>
 
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <div class="bag-holder">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="badge">0</span>
+        <div class="nav-right">
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="bag-holder">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge">0</span>
+                </div>
+                <i class="fa-solid fa-user"></i>
             </div>
-
-            <i class="fa-solid fa-user"></i>
+            <button class="contact-btn">Contact Us</button>
+            <div class="language-box" onclick="toggleDropdown()">
+                <img src="/mnt/data/26b06033-5132-4de9-8d22-272272f00148.png" class="flag">
+                <span class="lang">EN</span>
+                <span class="arrow">▼</span>
+                <div id="dropdown" class="dropdown">
+                    <div class="option">
+                        <img src="/mnt/data/26b06033-5132-4de9-8d22-272272f00148.png" class="flag"> EN
+                    </div>
+                    <div class="option">
+                        <img src="/mnt/data/daffe6c7-be51-4090-a252-b0ef0e1183f9.png" class="flag"> USA
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <button class="contact-btn">Contact Us</button>
-
-     <div class="language-box" onclick="toggleDropdown()">
-    <img src="/mnt/data/26b06033-5132-4de9-8d22-272272f00148.png" class="flag">
-    <span class="lang">EN</span>
-    <span class="arrow">▼</span>
-
-    <div id="dropdown" class="dropdown">
-        <div class="option">
-            <img src="/mnt/data/26b06033-5132-4de9-8d22-272272f00148.png" class="flag"> EN
-        </div>
-
-        <div class="option">
-            <img src="/mnt/data/daffe6c7-be51-4090-a252-b0ef0e1183f9.png" class="flag"> USA
-        </div>
-    </div>
-</div>
-     
-
     </nav>
-
-
 
     <!-- HERO SECTION -->
     <section class="hero-section">
-
         <div class="left-area">
             <div class="top-badge">● Health ● Trust ● Online</div>
-
             <h1>Instant Pharmacy<br>Access For You</h1>
-
             <div class="big-image-box">
-
                 <img src="images/banner-img1.jpg" class="main-img">
-
                 <ul>
                     <li><i class="fa-solid fa-circle-check"></i> Trusted Drug Store</li>
                 </ul>
-
             </div>
         </div>
-
-
         <div class="right-area">
-
             <div class="client-row">
                 <div class="avatars">
-                    <img src="images/user1.png">
-                    <img src="images/user2.png">
-                    <img src="images/user3.png">
-                    <img src="images/user4.png">
+                    <img src="images/user1.png" alt="User">
+                    <img src="images/user2.png" alt="User">
+                    <img src="images/user3.png" alt="User">
+                    <img src="images/user4.png" alt="User">
                 </div>
                 <p class="clients">4k+ <br><span>happy clients</span></p>
             </div>
-
             <p class="info-text">
                 Order prescription and over-the-counter medicines
                 online with confidence.
             </p>
-
             <div class="buttons">
                 <button class="btn-yellow">Shop Now</button>
                 <button class="btn-outline">
@@ -129,524 +104,482 @@
                     Upload Prescription
                 </button>
             </div>
-          <div class="banner-img2">
-            <img src="images/banner-img2.jpg" class="doctor-img">
+            <div class="banner-img2">
+                <img src="images/banner-img2.jpg" class="doctor-img" alt="Doctor">
             </div>
         </div>
     </section>
 
-
-
     <!-- FEATURE SECTION -->
     <section class="feature-section">
-
         <div class="feature-box">
             <div class="icon-circle">
-                <img src="images/benefits-icon1.png">
+                <img src="images/benefits-icon1.png" alt="Free Shipping">
             </div>
             <div class="text">
                 <h6>Free Shipping & Returns</h6>
                 <p>For all order over $200</p>
             </div>
         </div>
-
         <div class="feature-box">
             <div class="icon-circle">
-                <img src="images/benefits-icon2.png">
+                <img src="images/benefits-icon2.png" alt="Secure Payment">
             </div>
             <div class="text">
                 <h6>Secure Payment</h6>
                 <p>Ensure Secure Payment</p>
             </div>
         </div>
-
         <div class="feature-box">
             <div class="icon-circle">
-                <img src="images/benefits-icon3.png">
+                <img src="images/benefits-icon3.png" alt="Money Back">
             </div>
             <div class="text">
                 <h6>Money Back Guarantee</h6>
                 <p>Returning Money in 30 days</p>
             </div>
         </div>
-
         <div class="feature-box">
             <div class="icon-circle">
-                <img src="images/benefits-icon4.png">
+                <img src="images/benefits-icon4.png" alt="Support">
             </div>
             <div class="text">
                 <h6>24/7 Customer Support</h6>
                 <p>Friendly Customer Support</p>
             </div>
         </div>
-
     </section>
 
-
-
-
-
-    <!-- POPULAR SECTION -->
+    <!-- POPULAR CATEGORIES -->
     <section class="popular-section">
         <p class="paragraph">Top Choices</p>
         <h1 class="heading">Our Popular Categories</h1>
-
         <div class="categories">
-
             <div class="card">
-                <img src="images/popular-category1.jpg">
+                <img src="images/popular-category1.jpg" alt="Nutrition">
                 <button class="arrow-btn">→</button>
                 <div class="title">Nutrition & Weight</div>
             </div>
-
             <div class="card">
-                <img src="images/popular-category2.jpg">
+                <img src="images/popular-category2.jpg" alt="Skin">
                 <button class="arrow-btn">→</button>
                 <div class="title">Skin Essentials</div>
             </div>
-
             <div class="card">
-                <img src="images/popular-category3.jpg">
+                <img src="images/popular-category3.jpg" alt="Vitamins">
                 <button class="arrow-btn">→</button>
                 <div class="title">Vitamins & Minerals</div>
             </div>
-
             <div class="card">
-                <img src="images/popular-category4.jpg">
+                <img src="images/popular-category4.jpg" alt="Cold & Flu">
                 <button class="arrow-btn">→</button>
                 <div class="title">Cold & Flu Care</div>
             </div>
-
         </div>
     </section>
-
-
-
-
 
     <!-- FEATURED PRODUCTS -->
-    <p class="paragraph">BEST ITEMS</p>
-    <h1 class="heading">Our Featured Products</h1>
-
-    <div class="categories">
-        <span class="cat active">All</span>
-        <span class="cat">Cardiology</span>
-        <span class="cat">Neurology</span>
-        <span class="cat">Pediatrics</span>
-        <span class="cat">Gynecology</span>
-    </div>
-    <section class="allproduct">
-        <section class="products-section">
-
-
-
-
-            <div class="product-grid">
-
-                <!-- CARD 1 -->
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/product4.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
+    <section class="products-section">
+        <p class="paragraph">BEST ITEMS</p>
+        <h1 class="heading">Our Featured Products</h1>
+        <div class="categories-tabs">
+            <span class="cat active">All</span>
+            <span class="cat">Cardiology</span>
+            <span class="cat">Neurology</span>
+            <span class="cat">Pediatrics</span>
+            <span class="cat">Gynecology</span>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/product4.png" alt="NutriSlim">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Herbal</span>
+                        <span class="rating">⭐ 4.8/5</span>
                     </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Herbal</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>NutriSlim Capsules</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$42.00</span>
-                        </div>
+                    <h3>NutriSlim Capsules</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$42.00</span>
                     </div>
                 </div>
-
-                <!-- CARD 2 -->
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/product1.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Supplement</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>VitalEase Multivitamins</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$63.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/product2.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Healthy Skin</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>DermaGlow Skin Cream</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$84.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/product3.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Flu Remedy</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>CalmFlu Relief Syrup</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$96.00</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </section>
-
-
-   <section>
-    
-   </section>
-        <!-- BEST SELLING -->
-        <p class="paragraph">Most Demanding</p>
-        <h1 class="heading">Best Selling Products</h1>
-        <section class="best-Selling">
-
-
-
-            <div class="product-grid">
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product1.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/product1.png" alt="VitalEase">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Supplement</span>
+                        <span class="rating">⭐ 4.8/5</span>
                     </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Vitamin</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>ImmunoBoost</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$63.00</span>
-                        </div>
+                    <h3>VitalEase Multivitamins</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$63.00</span>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product2.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Herbal</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>MetaboTrim</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$87.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product3.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Cream</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>DermaGlow</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$55.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product4.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Syrup</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>CoughRelief Max</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$42.00</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-             <div class="product-grid">
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product5.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/product2.png" alt="DermaGlow">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Healthy Skin</span>
+                        <span class="rating">⭐ 4.8/5</span>
                     </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Vitamin</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>NutriCore Essentials</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$12.00</span>
-                        </div>
+                    <h3>DermaGlow Skin Cream</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$84.00</span>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product6.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Herbal</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>Slimvia Burn</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$26.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product7.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Cream</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>AcneShield Gel</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$82.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img-wrapper">
-                        <img src="images/best-product8.png">
-                        <i class="fa-regular fa-heart heart-icon"></i>
-                    </div>
-
-                    <div class="card-bottom white-bg">
-                        <div class="top-row">
-                            <span class="category">Tablet</span>
-                            <span class="rating">⭐ 4.8/5</span>
-                        </div>
-                        <h3>FluAway Tabs</h3>
-
-                        <div class="bottom-row">
-                            <button class="white-btn">Add to cart</button>
-                            <span class="price">$36.00</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </section>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/product3.png" alt="CalmFlu">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Flu Remedy</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>CalmFlu Relief Syrup</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$96.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- HOW IT WORKS -->
+    <section class="how-its">
+        <div class="imag-sec">
+            <img src="images/work-img.jpg" alt="Work Image" class="work-img">
+            <figure class="capsule-icon-figure">
+                <img src="images/capsule-icon.png" alt="Capsule Icon" class="capsule-icon">
+            </figure>
+        </div>
+        <div class="text-sec">
+            <a class="our-proccess">Our Process</a>
+            <h4>How it Works</h4>
+            <ul class="how-its-ul">
+                <li class="step">
+                    <figure><img src="images/work-icon1.png" alt="Icon" class="work-icon1"></figure>
+                    <div class="sub-info">
+                        <h6>Upload Your Prescription</h6>
+                        <p>Snap a photo or upload your doctor's prescription securely.</p>
+                    </div>
+                </li>
+                <li class="step">
+                    <figure><img src="images/work-icon2.png" alt="Icon" class="work-icon1"></figure>
+                    <div class="sub-info">
+                        <h6>Choose Your Products</h6>
+                        <p>Browse and select the medicines or health products you need.</p>
+                    </div>
+                </li>
+                <li class="step">
+                    <figure><img src="images/work-icon3.png" alt="Icon" class="work-icon1"></figure>
+                    <div class="sub-info">
+                        <h6>Get It Delivered</h6>
+                        <p>Receive your order at your doorstep — fast, safe, and hassle-free.</p>
+                    </div>
+                </li>
+            </ul>
+            <button href="#" class="button-shop">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- BEST SELLING -->
+    <section class="best-Selling">
+        <p class="paragraph">Most Demanding</p>
+        <h1 class="heading">Best Selling Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product1.png" alt="ImmunoBoost">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Vitamin</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>ImmunoBoost</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$63.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product2.png" alt="MetaboTrim">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Herbal</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>MetaboTrim</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$87.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product3.png" alt="DermaGlow">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Cream</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>DermaGlow</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$55.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product4.png" alt="CoughRelief">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Syrup</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>CoughRelief Max</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$42.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product5.png" alt="NutriCore">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Vitamin</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>NutriCore Essentials</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$12.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product6.png" alt="Slimvia">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Herbal</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>Slimvia Burn</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$26.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product7.png" alt="AcneShield">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Cream</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>AcneShield Gel</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$82.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="images/best-product8.png" alt="FluAway">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="card-bottom white-bg">
+                    <div class="top-row">
+                        <span class="category">Tablet</span>
+                        <span class="rating">⭐ 4.8/5</span>
+                    </div>
+                    <h3>FluAway Tabs</h3>
+                    <div class="bottom-row">
+                        <button class="white-btn">Add to cart</button>
+                        <span class="price">$36.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOTION BANNERS -->
     <div class="container-fluid">
-    <div class="row promotion-row">
-        <div class="col-lg-4 col-md-6 d-flex wow fadeInLeft">
-            <div class="promotion-box vitamins">
-                <span class="d-block discount-percent">5%</span>
-                <span class="d-block smol-text">Cashback</span>
-                <h4 class="specialh4">Vitamins &amp; <br> Supplements</h4>
-                <a href="single-product.html" class="text-decoration-none elementary_btn d-inline-block">Browse All</a>
+        <div class="row promotion-row">
+            <div class="col-lg-4 col-md-6 d-flex wow fadeInLeft">
+                <div class="promotion-box vitamins">
+                    <span class="d-block discount-percent">5%</span>
+                    <span class="d-block smol-text">Cashback</span>
+                    <h4 class="specialh4">Vitamins &amp; <br> Supplements</h4>
+                    <a href="single-product.html" class="text-decoration-none elementary_btn d-inline-block">Browse All</a>
+                </div>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex wow bounceIn">
-            <div class="promotion-box baby-care">
-                <span class="d-block smol-text">Flat</span>
-                <span class="d-block discount-percent">10% <span class="smol-text">OFF</span></span>
-                <h4 class="specialh4">Baby &amp; <br> Childcare</h4>
-                <a href="single-product.html" class="text-decoration-none elementary_btn d-inline-block">Browse All</a>
+            <div class="col-lg-4 col-md-6 d-flex wow bounceIn">
+                <div class="promotion-box baby-care">
+                    <span class="d-block smol-text">Flat</span>
+                    <span class="d-block discount-percent">10% <span class="smol-text">OFF</span></span>
+                    <h4 class="specialh4">Baby &amp; <br> Childcare</h4>
+                    <a href="single-product.html" class="baby-care-btn">Browse All</a>
+                </div>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex wow fadeInRight">
-            <div class="promotion-box personal-care">
-                <span class="d-block discount-percent">12%</span>
-                <span class="d-block smol-text">Cashback</span>
-                <h4 class="specialh4">Personal care <br> &amp; Wellness</h4>
-                <a href="single-product.html" class="text-decoration-none elementary_btn d-inline-block">Browse All</a>
+            <div class="col-lg-4 col-md-6 d-flex wow fadeInRight">
+                <div class="promotion-box personal-care">
+                    <span class="d-block discount-percent">12%</span>
+                    <span class="d-block smol-text">Cashback</span>
+                    <h4 class="specialh4">Personal care <br> &amp; Wellness</h4>
+                    <a href="single-product.html" class="text-decoration-none elementary_btn d-inline-block">Browse All</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!-- TESTIMONIALS -->
     <div class="testimonialsection">
         <h5>Testimonials</h5>
         <h2>Our Client Reviews</h2>
         <img src="images/rating-stars.png" alt="rating-stars" class="rating-stars">
-        <P>“Beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas aspernatur aurodit aut fugit,
-sed neatae vitae dicta ripiscing elit, sed do euismod tempor incidunt labore are dolore magna aliqua aut enim a minim adipiscing elit, sed do euismod tempor incidunt labore minima veniam.”</P>
-        <p>Jennifer Troyer<p>
-            <p>Administrator</p>
+        <P>"Beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas aspernatur aurodit aut fugit, sed neatae vitae dicta ripiscing elit, sed do euismod tempor incidunt labore are dolore magna aliqua aut enim a minim adipiscing elit, sed do euismod tempor incidunt labore minima veniam."</P>
+        <p>Jennifer Troyer</p>
+        <p>Administrator</p>
     </div>
 
-<section class="blog">
-    <div> <span class="news-text">News & Articles</span>
-    <h3 class="blog-text">Our Latest Blog Posts</h3></div>
-    
-    <div class="blog-wrapper">
-
-        <!-- Card 1 -->
-        <div class="blog-card">
-            <img src="images/news-and-articles-img1.jpg" alt="">
-            <h3>5 Natural Ways to Strengthen Your Immune System</h3>
-            <span class="card-text">
-                Discover simple lifestyle habits and key supplements
-                that can naturally boost your immunity...
-            </span>
+    <!-- BLOG -->
+    <section class="blog">
+        <div> 
+            <span class="news-text">News & Articles</span>
+            <h3 class="blog-text">Our Latest Blog Posts</h3>
         </div>
-
-        <!-- Card 2 -->
-        <div class="blog-card">
-            <img src="images/news-and-articles-img2.jpg" alt="">
-            <h3>Skincare Advice for Sensitive Skin: Simple Tips for a Calmer</h3>
-            <span class="card-text">
-                Learn how to care for sensitive skin with gentle
-                routines and dermatologist-recommended products.
-            </span>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="blog-card">
-            <img src="images/news-and-articles-img3.jpg" alt="" class="news-and-articles-img3">
-            <h3>Do You Really Need Supplements? A Practical Guide to Boosting</h3>
-            <span class="card-text">
-                Find out when supplements are helpful and how to choose
-                the right ones for your health needs.
-            </span>
-        </div>
-
-    </div>
-</section>
-
- <footer class="footer">
-    <div class="footer-content">
-
-        <!-- Left Logo Section -->
-        <div class="footer-left">
-            <div class="footer-logo">
-                <img src="images/footer-icon.png" alt="logo">
-                <h2>Pharmez.</h2>
+        <div class="blog-wrapper">
+            <div class="blog-card">
+                <img src="images/news-and-articles-img1.jpg" alt="">
+                <h3>5 Natural Ways to Strengthen Your Immune System</h3>
+                <span class="card-text">
+                    Discover simple lifestyle habits and key supplements
+                    that can naturally boost your immunity...
+                </span>
             </div>
-
-            <h3 class="news-title">Subscribe to Our Newsletter:</h3>
-
-            <div class="subscribe-box">
-                <input type="email" placeholder="Enter Email Address">
-                <button class="send-btn">
-                    <i class="fa-solid fa-paper-plane"></i>
-                </button>
+            <div class="blog-card">
+                <img src="images/news-and-articles-img2.jpg" alt="">
+                <h3>Skincare Advice for Sensitive Skin: Simple Tips for a Calmer</h3>
+                <span class="card-text">
+                    Learn how to care for sensitive skin with gentle
+                    routines and dermatologist-recommended products.
+                </span>
             </div>
-
-            <p class="copyright">
-                Copyright © 2025 pharmez. All Rights Reserved.
-            </p>
+            <div class="blog-card">
+                <img src="images/news-and-articles-img3.jpg" alt="" class="news-and-articles-img3">
+                <h3>Do You Really Need Supplements? A Practical Guide to Boosting</h3>
+                <span class="card-text">
+                    Find out when supplements are helpful and how to choose
+                    right ones for your health needs.
+                </span>
+            </div>
         </div>
+    </section>
 
-   <div class="footer-container">
-    <div class="footer-nav">
-        <h3>Navigation</h3>
-        <ul>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="home">Home</a></li>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="about">About</a></li>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="shop">Shop</a></li>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="team">Team</a></li>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="blog">Blog</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-contact">
-        <h3>Contact Info</h3>
-        <ul>
-            <li><i class="fa-solid fa-phone"></i> +61 3 8376 6284</li>
-            <li><i class="fa-solid fa-envelope"></i> Info@pharmez.com</li>
-            <li><i class="fa-solid fa-location-dot"></i> 21 King Street Melbourne, 3000, Australia</li>
-            <li><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 am to 6:00 pm</li>
-        </ul>
-    </div>
-</div>
-
-            <!-- Social Icons (Vertical Circles) -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="images/footer-icon.png" alt="logo">
+                    <h2>Pharmez.</h2>
+                </div>
+                <h3 class="news-title">Subscribe to Our Newsletter:</h3>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter Email Address">
+                    <button class="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="copyright">
+                    Copyright © 2025 pharmez. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer-container">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="home">Home</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="about">About</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="shop">Shop</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="team">Team</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="footer-contact">
+                        <h3>Contact Info</h3>
+                        <ul class="contact">
+                            <li><i class="fa-solid fa-phone"></i> +61 3 8376 6284</li>
+                            <li><i class="fa-solid fa-envelope"></i> Info@pharmez.com</li>
+                            <li><i class="fa-solid fa-location-dot"></i> 21 King Street Melbourne, 3000, Australia</li>
+                            <li><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 am to 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="social-icons">
                 <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-    </div>
-</footer>
+        </div>
+    </footer>
 
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
 
-
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
-
 </html>
