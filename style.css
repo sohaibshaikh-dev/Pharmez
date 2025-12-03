@@ -1000,6 +1000,7 @@ body {
 
 .rating-stars {
     vertical-align: middle;
+    margin: 0 auto;
 }
 
 /* BLOG */
