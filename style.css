@@ -722,7 +722,7 @@ body {
 
 .capsule-icon-figure {
     position: absolute;
-    top: 350px;
+    top: 212px;
     right: -138px;
     width: 162px;
     height: 162px;
@@ -861,7 +861,10 @@ body {
 
 .promotion-row {
     display: flex;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .promotion-box {
